@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="media.css" />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"
+    ></script>
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container container">
+        <div class="header__logo">
+          <img src="./images/header-logo.webp" alt="#" />
+        </div>
+        <nav class="header__nav nav">
+          <ul class="nav__list list-reset">
+            <li class="nav__item">
+              <a href="#" class="nav__link">Главная </a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Каталог</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Новости</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Наш АСЦ</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="header__search search btn-reset">
+          <svg class="search__icon">
+            <use xlink:href="images/sprite.svg#searchIcon"></use>
+          </svg>
+        </button>
+        <ul class="header__list list-reset">
+          <li class="header__item">
+            <button class="header__btn btn-reset personal-area">
+              <svg class="header__icon">
+                <use xlink:href="images/sprite.svg#headerIcon-menu-1"></use>
+              </svg>
+            </button>
+            <div class="personal-area__box tooltip">
+              <div class="tooltip__title">
+                <span class="tooltip__icon">
+                  <svg>
+                    <use xlink:href="images/sprite.svg#headerIcon-menu-1"></use>
+                  </svg>
+                </span>
+                <span class="personal-name">Мария</span>
+              </div>
+              <button class="tooltip-option btn-reset">Личный кабинет</button>
+              <button class="tooltip-option btn-reset">История заказов</button>
+              <button class="tooltip-option btn-reset">
+                Персональные предложения
+              </button>
+              <button class="tooltip-option btn-reset">Выйти</button>
+            </div>
+          </li>
+          <li class="header__item">
+            <button class="header__btn btn-reset">
+              <svg class="header__icon">
+                <use xlink:href="images/sprite.svg#headerIcon-menu-2"></use>
+              </svg>
+            </button>
+          </li>
+          <li class="header__item">
+            <button class="header__btn btn-reset">
+              <svg class="header__icon">
+                <use xlink:href="images/sprite.svg#headerIcon-menu-3"></use>
+              </svg>
+            </button>
+          </li>
+          <li class="header__item">
+            <div class="notification">3</div>
+            <button class="header__btn btn-reset">
+              <svg class="header__icon">
+                <use xlink:href="images/sprite.svg#headerIcon-menu-4"></use>
+              </svg>
+            </button>
+          </li>
+          <li class="header__item burger">
+            <button class="header__btn btn-reset">
+              <div class="burger__line"></div>
+              <div class="burger__line"></div>
+              <div class="burger__line"></div>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <section class="hero">
+      <div class="container">
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide hero__slide">
+              <div class="hero__left">
+                <p class="hero__descr">Новое поступление</p>
+                <div class="hero__title">
+                  Лучшие товары от&nbsp;компании Dell
+                </div>
+                <button class="hero__btn btn btn-reset">
+                  <div class="btn__bg">→</div>
+                  <p class="btn__descr">Побробнее</p>
+                </button>
+              </div>
+              <div class="hero__right">
+                <picture>
+                  <source
+                    srcset="./images/hero-tablets-mobile.webp"
+                    media="(max-width: 576px)"
+                  />
+                  <img src="./images/hero-tablets.webp" alt="#" />
+                </picture>
+              </div>
+            </div>
+            <div class="swiper-slide hero__slide">
+              <div class="hero__left">
+                <p class="hero__descr">Новое поступление</p>
+                <div class="hero__title">Лучшие товары от компании Dell</div>
+                <button class="hero__btn btn btn-reset">
+                  <div class="btn__bg">→</div>
+                  <p class="btn__descr">Побробнее</p>
+                </button>
+              </div>
+              <div class="hero__right">
+                <picture>
+                  <source
+                    srcset="./images/hero-tablets-mobile.webp"
+                    media="(max-width: 576px)"
+                  />
+                  <img src="./images/hero-tablets.webp" alt="#" />
+                </picture>
+              </div>
+            </div>
+            <div class="swiper-slide hero__slide">
+              <div class="hero__left">
+                <p class="hero__descr">Новое поступление</p>
+                <div class="hero__title">Лучшие товары от компании Dell</div>
+                <button class="hero__btn btn btn-reset">
+                  <div class="btn__bg">→</div>
+                  <p class="btn__descr">Побробнее</p>
+                </button>
+              </div>
+              <div class="hero__right">
+                <picture>
+                  <source
+                    srcset="./images/hero-tablets-mobile.webp"
+                    media="(max-width: 576px)"
+                  />
+                  <img src="./images/hero-tablets.webp" alt="#" />
+                </picture>
+              </div>
+            </div>
+            <div class="swiper-slide hero__slide">
+              <div class="hero__left">
+                <p class="hero__descr">Новое поступление</p>
+                <div class="hero__title">Лучшие товары от компании Dell</div>
+                <button class="hero__btn btn btn-reset">
+                  <div class="btn__bg">→</div>
+                  <p class="btn__descr">Побробнее</p>
+                </button>
+              </div>
+              <div class="hero__right">
+                <picture>
+                  <source
+                    srcset="./images/hero-tablets-mobile.webp"
+                    media="(max-width: 576px)"
+                  />
+                  <img src="./images/hero-tablets.webp" alt="#" />
+                </picture>
+              </div>
+            </div>
+            <div class="swiper-slide hero__slide">
+              <div class="hero__left">
+                <p class="hero__descr">Новое поступление</p>
+                <div class="hero__title">Лучшие товары от компании Dell</div>
+                <button class="hero__btn btn btn-reset">
+                  <div class="btn__bg">→</div>
+                  <p class="btn__descr">Побробнее</p>
+                </button>
+              </div>
+              <div class="hero__right">
+                <picture>
+                  <source
+                    srcset="./images/hero-tablets-mobile.webp"
+                    media="(max-width: 576px)"
+                  />
+                  <img src="./images/hero-tablets.webp" alt="#" />
+                </picture>
+              </div>
+            </div>
+          </div>
+          <div class="buttons__wrapper">
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next">
+              <svg class="hero-arrow">
+                <use xlink:href="images/sprite.svg#heroIcon-arrow"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__proposition proposition">
+        <div class="proposition__title">Выгодное предложение от Dell</div>
+      </div>
+      <div class="wrapper-container container">
+        <div class="hero__scroll">
+          <p class="scroll-descr">Scroll to catalog</p>
+          <svg>
+            <use xlink:href="images/sprite.svg#heroIcon-scroll"></use>
+          </svg>
+        </div>
+        <picture class="hero__bg">
+          <source
+            srcset="./images/hero-dell-mobile.svg"
+            media="(max-width: 576px)"
+          />
+          <img src="./images/hero-dell.svg" alt="#" />
+        </picture>
+      </div>
+    </section>
+    <section class="catalog">
+      <div class="catalog__container container">
+        <div class="catalog__item item">
+          <div class="item__title">Каталог товаров от&nbsp;Dell</div>
+          <p class="item__descr">
+            Наша компания является зарегистрированным и&nbsp;официальным
+            партнером&nbsp;Dell в России.
+          </p>
+          <button class="item__btn btn btn-reset">
+            <div class="btn__bg">→</div>
+            <p class="btn__descr">В каталог</p>
+          </button>
+        </div>
+        <a class="catalog__item item">
+          <div class="item__number">01</div>
+          <picture class="item__img">
+            <source
+              srcset="./images/catalog-image-1-mobile.webp"
+              media="(max-width: 576px)"
+            />
+            <img src="./images/catalog-image-1.webp" alt="#" />
+          </picture>
+          <div class="item__wrapper">
+            <p class="item__descr">105 товаров</p>
+            <div href="#" class="item__link">Ноутбуки</div>
+          </div>
+        </a>
+        <a class="catalog__item item">
+          <div class="item__number">02</div>
+          <picture class="item__img">
+            <source
+              srcset="./images/catalog-image-2-mobile.webp"
+              media="(max-width: 576px)"
+            />
+            <img src="./images/catalog-image-2.webp" alt="#" />
+          </picture>
+          <div class="item__wrapper">
+            <p class="item__descr">65 товаров</p>
+            <div href="#" class="item__link">Персональные компьютеры</div>
+          </div>
+        </a>
+        <a class="catalog__item item">
+          <div class="item__number">03</div>
+          <picture class="item__img">
+            <source
+              srcset="./images/catalog-image-3-mobile.webp"
+              media="(max-width: 576px)"
+            />
+            <img src="./images/catalog-image-3.webp" alt="#" />
+          </picture>
+          <div class="item__wrapper">
+            <p class="item__descr">13 товаров</p>
+            <div href="#" class="item__link">Cерверы</div>
+          </div>
+        </a>
+        <a class="catalog__item item">
+          <div class="item__number">04</div>
+          <picture class="item__img">
+            <source
+              srcset="./images/catalog-image-4-mobile.webp"
+              media="(max-width: 576px)"
+            />
+            <img src="./images/catalog-image-4.webp" alt="#" />
+          </picture>
+          <div class="item__wrapper">
+            <p class="item__descr">2345 товаров</p>
+            <div href="#" class="item__link">Dell EMC</div>
+          </div>
+        </a>
+        <a class="catalog__item item">
+          <div class="item__number">05</div>
+          <picture class="item__img">
+            <source
+              srcset="./images/catalog-image-5-mobile.webp"
+              media="(max-width: 576px)"
+            />
+            <img src="./images/catalog-image-5.webp" alt="#" />
+          </picture>
+          <div class="item__wrapper">
+            <p class="item__descr">195 товаров</p>
+            <div href="#" class="item__link">Запасные части к Dell EMC</div>
+          </div>
+        </a>
+      </div>
+    </section>
+    <section class="pluses">
+      <div class="pluses__container container">
+        <div class="pluses__bg">best<br />quality</div>
+        <picture class="pluses__img">
+          <source
+            srcset="./images/pluses-tablet-mobile.webp"
+            media="(max-width: 576px)"
+          />
+          <img src="./images/pluses-tablet.webp" alt="#" />
+        </picture>
+        <div class="pluses-top">
+          <div class="pluses__wrapper">
+            <div class="pluses__title">Наши&nbsp;преимущества</div>
+            <p class="pluses__descr">
+              Оптимизация мощностей (расходов, социальных выплат и т.п.)
+              позволили компании на 4,7% понизить цены по сравнению
+              с конкурентами
+            </p>
+            <button class="item__btn btn btn-reset">
+              <div class="btn__bg">→</div>
+              <p class="btn__descr">Оставить заявку</p>
+            </button>
+          </div>
+        </div>
+        <ul class="pluses__list list list-reset">
+          <li class="list__item item">
+            <a href="#" class="item__link">
+              <picture class="item__bg">
+                <source
+                  srcset="./images/pluses-item-bg-mobile.webp"
+                  media="(max-width: 576px)"
+                />
+                <img src="./images/pluses-item-bg.webp" alt="#" />
+              </picture>
+
+              <div class="item__img">
+                <svg class="item__icon">
+                  <use xlink:href="images/sprite.svg#plusesIcon-1"></use>
+                </svg>
+              </div>
+              <div class="item__title">Самые выгодные и&nbsp;низкие цены</div>
+              <p class="item__descr">
+                В наличии широкий ассортимент, а&nbsp;также доступные цены
+                на&nbsp;ноутбуки Dell
+              </p>
+            </a>
+          </li>
+          <li class="list__item item">
+            <a href="#" class="item__link">
+              <picture class="item__bg">
+                <source
+                  srcset="./images/pluses-item-bg-mobile.webp"
+                  media="(max-width: 576px)"
+                />
+                <img src="./images/pluses-item-bg.webp" alt="#" />
+              </picture>
+              <div class="item__img">
+                <svg class="item__icon">
+                  <use xlink:href="images/sprite.svg#plusesIcon-2"></use>
+                </svg>
+              </div>
+              <div class="item__title">Авторизованный сервисный центр DELL</div>
+              <p class="item__descr">
+                Сертифицированный сервисный центр по ремонту техники Dell
+                в России и странах СНГ
+              </p>
+            </a>
+          </li>
+          <li class="list__item item">
+            <a href="#" class="item__link">
+              <picture class="item__bg">
+                <source
+                  srcset="./images/pluses-item-bg-mobile.webp"
+                  media="(max-width: 576px)"
+                />
+                <img src="./images/pluses-item-bg.webp" alt="#" />
+              </picture>
+              <div class="item__img">
+                <svg class="item__icon">
+                  <use xlink:href="images/sprite.svg#plusesIcon-3"></use>
+                </svg>
+              </div>
+              <div class="item__title">
+                Высокий уровень технической экспертизы
+              </div>
+              <p class="item__descr">
+                Мы прошли аттестацию в виде тестирования, где показали высокий
+                уровень знаний
+              </p>
+            </a>
+          </li>
+          <li class="list__item item">
+            <a href="#" class="item__link">
+              <picture class="item__bg">
+                <source
+                  srcset="./images/pluses-item-bg-mobile.webp"
+                  media="(max-width: 576px)"
+                />
+                <img src="./images/pluses-item-bg.webp" alt="#" />
+              </picture>
+              <div class="item__img">
+                <svg class="item__icon">
+                  <use xlink:href="images/sprite.svg#plusesIcon-4"></use>
+                </svg>
+              </div>
+              <div class="item__title">Официальный партнер DELL</div>
+              <p class="item__descr">
+                Официальный поставщик продукции DELL в России и&nbsp;странах СНГ
+              </p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="news">
+      <div class="news__container container">
+        <div class="news__top">
+          <div class="news__wrapper">
+            <div class="news__title">Последние новости</div>
+            <p class="news__descr">
+              Вы можете посмотреть ещё больше интересных новостей новостей и
+              узнать о последних новинках, перейдя по кнопке
+            </p>
+          </div>
+          <button class="news__btn btn btn-reset">
+            <p class="btn__descr">Все новости</p>
+            <div class="btn__bg">→</div>
+          </button>
+        </div>
+        <div class="news__main">
+          <ul class="news__list list-reset list">
+            <li class="news__item item">
+              <a href="" class="news__link">
+                <div class="img-wrapper">
+                  <div class="news__date date">
+                    <div class="date__day">11</div>
+                    <div class="date__month">июля</div>
+                  </div>
+                  <picture class="news__img">
+                    <source
+                      srcset="./images/news-image-1-mobile.webp"
+                      media="(max-width: 576px)"
+                    />
+                    <img src="./images/news-image-1.webp" alt="#" />
+                  </picture>
+                  <img
+                    class="btn-bg-img"
+                    src="./images/news-btn-bg.webp"
+                    alt="#"
+                  />
+                  <img
+                    class="news-bg-img"
+                    src="./images/news-universal-bg.webp"
+                    alt="#"
+                  />
+                  <div class="news__btn">
+                    <button class="btn-center btn-reset">→</button>
+                  </div>
+                </div>
+                <div class="item__title">
+                  <span>GE использует технологии Dell</span>
+                </div>
+                <p class="item__descr">
+                  Вы можете посмотреть ещё больше интересных новостей
+                </p>
+              </a>
+            </li>
+            <li class="news__item item">
+              <a href="" class="news__link">
+                <div class="img-wrapper">
+                  <div class="news__date date">
+                    <div class="date__day">11</div>
+                    <div class="date__month">июля</div>
+                  </div>
+                  <picture class="news__img">
+                    <source
+                      srcset="./images/news-image-2.webp"
+                      media="(max-width: 576px)"
+                    />
+                    <img src="./images/news-image-2.webp" alt="#" />
+                  </picture>
+                  <img
+                    class="btn-bg-img"
+                    src="./images/news-btn-bg.webp"
+                    alt="#"
+                  />
+                  <img
+                    class="news-bg-img"
+                    src="./images/news-universal-bg.webp"
+                    alt="#"
+                  />
+                  <div class="news__btn">
+                    <button class="btn-center btn-reset">→</button>
+                  </div>
+                </div>
+                <div class="item__title">
+                  <span>GE использует технологии Dell</span>
+                </div>
+                <p class="item__descr">
+                  Вы можете посмотреть ещё больше интересных новостей
+                </p>
+              </a>
+            </li>
+            <li class="news__item item">
+              <a href="" class="news__link">
+                <div class="img-wrapper">
+                  <div class="news__date date">
+                    <div class="date__day">11</div>
+                    <div class="date__month">июля</div>
+                  </div>
+                  <picture class="news__img">
+                    <source
+                      srcset="./images/news-image-3.webp"
+                      media="(max-width: 576px)"
+                    />
+                    <img src="./images/news-image-3.webp" alt="#" />
+                  </picture>
+                  <img
+                    class="btn-bg-img"
+                    src="./images/news-btn-bg.webp"
+                    alt="#"
+                  />
+                  <img
+                    class="news-bg-img"
+                    src="./images/news-universal-bg.webp"
+                    alt="#"
+                  />
+                  <div class="news__btn">
+                    <button class="btn-center btn-reset">→</button>
+                  </div>
+                </div>
+                <div class="item__title">
+                  <span>GE использует технологии Dell</span>
+                </div>
+                <p class="item__descr">
+                  Вы можете посмотреть ещё больше интересных новостей
+                </p>
+              </a>
+            </li>
+            <li class="news__item item">
+              <a href="" class="news__link">
+                <div class="img-wrapper">
+                  <div class="news__date date">
+                    <div class="date__day">11</div>
+                    <div class="date__month">июля</div>
+                  </div>
+                  <picture class="news__img">
+                    <source
+                      srcset="./images/news-image-4-mobile.webp"
+                      media="(max-width: 576px)"
+                    />
+                    <img src="./images/news-image-4.webp" alt="#" />
+                  </picture>
+                  <img
+                    class="btn-bg-img"
+                    src="./images/news-btn-bg.webp"
+                    alt="#"
+                  />
+                  <img
+                    class="news-bg-img"
+                    src="./images/news-universal-bg.webp"
+                    alt="#"
+                  />
+                  <div class="news__btn">
+                    <button class="btn-center btn-reset">→</button>
+                  </div>
+                </div>
+                <div class="item__title">
+                  <span>GE использует технологии Dell</span>
+                </div>
+                <p class="item__descr">
+                  Вы можете посмотреть ещё больше интересных новостей
+                </p>
+              </a>
+            </li>
+            <li class="news__item item">
+              <a href="" class="news__link">
+                <div class="img-wrapper">
+                  <div class="news__date date">
+                    <div class="date__day">11</div>
+                    <div class="date__month">июля</div>
+                  </div>
+                  <picture class="news__img">
+                    <source
+                      srcset="./images/news-image-5-mobile.webp"
+                      media="(max-width: 576px)"
+                    />
+                    <img src="./images/news-image-5.webp" alt="#" />
+                  </picture>
+                  <img
+                    class="btn-bg-img"
+                    src="./images/news-btn-bg.webp"
+                    alt="#"
+                  />
+                  <img
+                    class="news-bg-img"
+                    src="./images/news-universal-bg.webp"
+                    alt="#"
+                  />
+                  <div class="news__btn">
+                    <button class="btn-center btn-reset">→</button>
+                  </div>
+                </div>
+                <div class="item__title">
+                  <span>GE использует технологии Dell</span>
+                </div>
+                <p class="item__descr">
+                  Вы можете посмотреть ещё больше интересных новостей
+                </p>
+              </a>
+            </li>
+            <li class="news__item item">
+              <a href="" class="news__link">
+                <div class="img-wrapper">
+                  <div class="news__date date">
+                    <div class="date__day">11</div>
+                    <div class="date__month">июля</div>
+                  </div>
+                  <picture class="news__img">
+                    <source
+                      srcset="./images/news-image-6.webp"
+                      media="(max-width: 576px)"
+                    />
+                    <img src="./images/news-image-6.webp" alt="#" />
+                  </picture>
+                  <img
+                    class="btn-bg-img"
+                    src="./images/news-btn-bg.webp"
+                    alt="#"
+                  />
+                  <img
+                    class="news-bg-img"
+                    src="./images/news-universal-bg.webp"
+                    alt="#"
+                  />
+                  <div class="news__btn">
+                    <button class="btn-center btn-reset">→</button>
+                  </div>
+                </div>
+                <div class="item__title">
+                  <span>GE использует технологии Dell</span>
+                </div>
+                <p class="item__descr">
+                  Вы можете посмотреть ещё больше интересных новостей
+                </p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="contacts">
+      <div class="contacts__bg">our contacts</div>
+      <div class="contacts__container container">
+        <div class="contacts-box box">
+          <div class="contacts-form-bg">
+            <picture class="contacts-img">
+              <source
+                srcset="./images/contacts-bg-mobile.webp"
+                media="(max-width: 576px)"
+              />
+              <img src="./images/contacts-bg.webp" alt="#" />
+            </picture>
+          </div>
+          <div class="box__left">
+            <address class="contacts__address">
+              <div class="address__title">Наши контакты</div>
+              <p class="address__descr">
+                Вы можете связаться с нашим онлайн-консультантом
+              </p>
+              <ul class="address__list list-reset">
+                <li class="address__item item">
+                  <div class="item__title">Адрес</div>
+                  <p class="item__descr">
+                    Москва, ул. 3-я Хорошевская, дом 2, строение 1
+                  </p>
+                </li>
+
+                <li class="address__item item">
+                  <div class="item__title">E-mail</div>
+                  <a href="mailto:dell_ru@gmail.com" class="item__descr"
+                    >dell_ru@gmail.com</a
+                  >
+                </li>
+
+                <li class="address__item item">
+                  <div class="item__title">Телефон</div>
+                  <a href="tel:+74957370601" class="item__descr"
+                    >+7 495 737-06-01</a
+                  >
+                  <a href="tel:+74957370601" class="item__descr"
+                    >+7 495 737-06-01</a
+                  >
+                </li>
+              </ul>
+              <div class="address__wrapper">
+                <a href="" class="address__link">
+                  <svg class="item__icon">
+                    <use xlink:href="images/sprite.svg#facebookIcon"></use>
+                  </svg>
+                </a>
+                <a href="" class="address__link">
+                  <svg class="item__icon">
+                    <use xlink:href="images/sprite.svg#watsupIcon"></use>
+                  </svg>
+                </a>
+              </div>
+            </address>
+          </div>
+          <div class="box__right">
+            <form action="#" class="contacts__form form">
+              <div class="form__titile">Оставьте заявку</div>
+              <p class="form__descr">
+                Оставьте свой номер, и мы перезвоним Вам
+              </p>
+
+              <fieldset tabindex="0" class="form__fieldset" for="name">
+                <div class="error-message error-name">
+                  Ввод имени обязателен
+                </div>
+                <legend class="form__legend">Ваше имя</legend>
+                <input class="form__input from-name" type="text" id="name" />
+              </fieldset>
+              <fieldset tabindex="0" class="form__fieldset" for="tel">
+                <div class="error-message error-tel">
+                  Ввод телефона обязателен
+                </div>
+                <legend class="form__legend">Номер телефона</legend>
+                <input class="form__input form-tel" type="tel" id="tel" />
+              </fieldset>
+              <fieldset tabindex="0" class="form__fieldset form-textarea" for="comment">
+                <legend class="form__legend">Комментарий</legend>
+                <textarea
+                  class="form__input"
+                  type="text"
+                  id="comment"
+                ></textarea>
+              </fieldset>
+              <button type="submit" class="form__btn btn btn-reset">
+                <div class="btn__bg">→</div>
+                <p class="btn__descr">Заказать</p>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="footer__bg">dell</div>
+        <div class="footer-top">
+          <div class="footer__part part">
+            <img class="footer__logo" src="./images/footer-logo.webp" alt="#" />
+          </div>
+          <div class="footer__part part">
+            <div class="part__title">Каталог</div>
+            <ul class="part__list list-reset">
+              <li class="part__item">
+                <a href="#" class="part__link">Ноутбуки</a>
+              </li>
+              <li class="part__item">
+                <a href="#" class="part__link">Персональные компьютеры</a>
+              </li>
+              <li class="part__item">
+                <a href="#" class="part__link">Серверы</a>
+              </li>
+              <li class="part__item">
+                <a href="#" class="part__link">Dell EMC</a>
+              </li>
+              <li class="part__item">
+                <a href="#" class="part__link">Запасные части к Dell EMC</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__part part">
+            <div class="part__title">Личный кабинет</div>
+            <ul class="part__list list-reset">
+              <li class="part__item">
+                <a href="#" class="part__link">Профиль</a>
+              </li>
+              <li class="part__item">
+                <a href="#" class="part__link">История заказов</a>
+              </li>
+              <li class="part__item">
+                <a href="#" class="part__link">SMS-уведомления</a>
+              </li>
+              <li class="part__item">
+                <a href="#" class="part__link">Избранное</a>
+              </li>
+              <li class="part__item">
+                <a href="#" class="part__link">Сравнение товаров</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__part part">
+            <div class="part__title">Помощь</div>
+            <ul class="part__list list-reset">
+              <li class="part__item">
+                <a href="#" class="part__link">Доставка и оплата</a>
+              </li>
+              <li class="part__item">
+                <a href="#" class="part__link">Контакты</a>
+              </li>
+              <li class="part__item"><a href="#" class="part__link">FAQ</a></li>
+              <li class="part__item">
+                <a href="#" class="part__link">Наш АСЦ</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <address class="footer__address address">
+            <div class="address__item">
+              <div class="address__title">Адрес</div>
+              <p class="address__link">
+                Москва, ул. 3-я Хорошевская, дом 2, строение 1
+              </p>
+            </div>
+            <div class="address__item">
+              <div class="address__title">Телефон</div>
+              <a href="tel:+74957370601" class="address__link"
+                >+7 495 737-06-01,
+              </a>
+              <a href="tel:+74957370601" class="address__link"
+                >+7 495 737-06-01</a
+              >
+            </div>
+            <div class="address__item">
+              <div class="address__title">E-mail</div>
+              <a href="mailto:dell_ru@gmail.com" class="address__link"
+                >dell_ru@gmail.com</a
+              >
+            </div>
+            <div class="address__item">
+              <a href="#" class="footer__social-link">
+                <svg class="address__icon">
+                  <use xlink:href="images/sprite.svg#facebookIcon"></use>
+                </svg>
+              </a>
+              <a href="#" class="footer__social-link">
+                <svg class="address__icon">
+                  <use xlink:href="images/sprite.svg#watsupIcon"></use>
+                </svg>
+              </a>
+            </div>
+          </address>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

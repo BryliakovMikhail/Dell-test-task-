@@ -1,0 +1,43 @@
+@import "./variables";
+// @import "./fonts";
+
+@mixin title {
+  padding: 20px;
+  background: aqua;
+  color: $fontColor;
+}
+
+@mixin iconSize {
+  width: 24px;
+  height: 24px;
+}
+
+@mixin btnBg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 55px;
+  height: 55px;
+  border-radius: 50px;
+  background: #33a9ff;
+  font-family: "Circe";
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 35px;
+  color: $whiteColor;
+  transition: transform .2s ease-in-out, background-color .2s ease-in-out;
+}
+
+@mixin btnDescr {
+  font-size: 16px;
+  line-height: 30px;
+  color: $fontColor;
+}
+
+@mixin catalogItemDescr {
+  margin: 0;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 150%;
+  color: $greyColor;
+}
